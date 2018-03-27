@@ -1,4 +1,4 @@
-import defineModel from '../gaiagram/defineModel'
+import defineModel from '../diagram/defineModel'
 
 const schema = {
   make: {type: "string", index: true, required: true},

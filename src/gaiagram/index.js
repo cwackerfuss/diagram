@@ -1,4 +1,4 @@
-export const initGaiagram = () => ({
+export const initDiagram = () => ({
   migrations: [],
   models: {},
   registerModel: function(model) {

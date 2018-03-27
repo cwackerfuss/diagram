@@ -1,5 +1,5 @@
-import blockstackDriver from '../gaiagram/adapters/blockstack'
-import CollectionService from '../gaiagram/drivers/collection'
+import blockstackDriver from '../diagram/adapters/blockstack'
+import CollectionService from '../diagram/drivers/collection'
 
 export default class Model {
   constructor({ type, storage, schema }) {

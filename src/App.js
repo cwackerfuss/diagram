@@ -3,16 +3,16 @@ import logo from './logo.svg';
 import './App.css';
 import migrate from './migrations';
 import Car from './models/Car';
-import { initGaiagram } from './gaiagram'
+import { initGaiagram } from './diagram'
 
 class App extends Component {
   componentDidMount() {
-    const gaiagram = initGaiagram()
-    gaiagram.registerModel(Car)
+    const diagram = initDiagram()
+    diagram.registerModel(Car)
 
     const models = migrate()
     console.log(models)
-    console.log(gaiagram.models.car.validate({ make: 'Ford', year: '1922' }))
+    console.log(diagram.models.car.validate({ make: 'Ford', year: '1922' }))
 
 
     // once migrate is done, we assign each item in models to the class model
