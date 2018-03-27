@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import migrate from './migrations';
 import Car from './models/Car';
-import { initGaiagram } from './diagram'
+import { initDiagram } from './diagram'
 
 class App extends Component {
   componentDidMount() {
