@@ -1,11 +1,11 @@
-import blockstackDriver from '../diagram/adapters/blockstack'
-import CollectionService from '../diagram/drivers/collection'
+import blockstackDriver from '../diagram/drivers/blockstack'
+import MultiFileCollectionStrategy from '../diagram/strategies/MultiFileCollectionStrategy'
 
 export default class Model {
   constructor({ type, storage, schema }) {
     this.type = type
     this.schema = schema
-    this.storage = storage || new CollectionService({
+    this.storage = storage || new MultiFileCollectionStrategy({
       type, driver: blockstackDriver({ encrypt: true })
     })
   }

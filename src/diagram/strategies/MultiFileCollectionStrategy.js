@@ -1,7 +1,7 @@
 import shortid from 'shortid';
 import moment from 'moment';
 
-export default class CollectionService {
+export default class MultiFileCollectionStrategy {
   constructor({ type, driver }) {
     this.type = type
     this.storage = driver;
